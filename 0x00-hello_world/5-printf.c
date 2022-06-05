@@ -7,8 +7,6 @@
  */
 int main(void)
 {
-	char comma[] = ",";
-
-	printf("with proper grammer%s but the outcome is a piece of art%s\n", comma, comma);
+	printf("with proper grammer, but the outcome is a piece of arts,\n");
 	return (0);
 }
