@@ -9,6 +9,6 @@ int main(void)
 {
 	char comma[] = ",";
 
-	printf("with proper grammer%c but the outcome is a piece of art%c\n", comma, comma);
+	printf("with proper grammer%s but the outcome is a piece of art%s\n", comma, comma);
 	return (0);
 }
