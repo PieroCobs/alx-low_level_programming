@@ -22,17 +22,17 @@ int main(void)
 	if (n > 0)
 	{
 		interpretation = malloc(12);
-		strcpy(interpretation, "is positive");
+		strcpy(interpretation, "positive");
 	}
 	else if (n == 0)
 	{
 		interpretation = malloc(8);
-		strcpy(interpretation, "is zero");
+		strcpy(interpretation, "zero");
 	}
 	else
 	{
 		interpretation = malloc(12);
-		strcpy(interpretation, "is negative");
+		strcpy(interpretation, "negative");
 	}
 
 	printf("%d is %s\n", n, interpretation);
