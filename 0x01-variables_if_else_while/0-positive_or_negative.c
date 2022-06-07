@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+#include <string.h>
 
 /**
  * main - programm starting point
@@ -13,24 +14,27 @@
 int main(void)
 {
 	int n;
+	char *interpretation;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	char interpretation[16];
 
 	if (n > 0)
 	{
-		interpretation = "is positive";
+		interpretation = malloc(12);
+		strcpy(interpretation, "is positive");
 	}
 	else if (n == 0)
 	{
-		interpretation = "is zero";
+		interpretation = malloc(8);
+		strcpy(interpretation, "is zero");
 	}
 	else
 	{
-		interpretation = "is negative";
+		interpretation = malloc(12);
+		strcpy(interpretation, "is negative");
 	}
 
-	printf("%d is %d\n", n, interpretation);
+	printf("%d is %s\n", n, interpretation);
 	return (0);
 }
